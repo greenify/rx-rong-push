@@ -1,0 +1,12 @@
+<prescriptions xmlns="http://greenify.github.io/schemas/prescription/v3">
+  <prescription type="service" class="io.rong.push.PushService" sender="any" />
+  <prescription type="broadcast">
+    <intent-filter>
+      <action name="android.net.conn.CONNECTIVITY_CHANGE" />
+      <action name="android.intent.action.BOOT_COMPLETED" />
+      <action name="android.intent.action.USER_PRESENT" />
+      <action name="android.intent.action.ACTION_POWER_CONNECTED" />
+      <action name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+    </intent-filter>
+  </prescription>
+</prescriptions>
